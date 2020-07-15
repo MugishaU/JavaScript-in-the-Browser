@@ -1,7 +1,3 @@
-const bgClick = (event, selected) => {
-  selected.style.backgroundColor = "blue";
-};
-
 const h1 = document.querySelector("header h1");
 
 h1.addEventListener("click", (event) => {
@@ -37,4 +33,19 @@ const navLink3 = document.getElementById("a3");
 const para3 = document.getElementById("p3")
 navLink3.addEventListener("click", function event() {
   para3.setAttribute("style", "font-weight: bold; font-size: 20px");
+});
+
+const h2 = document.querySelector("header h2");
+h2.addEventListener("mouseover", function event() {
+  h2.textContent = "Hello, Greetings";
+});
+
+h2.addEventListener("mouseout", function event() {
+  h2.textContent = "Eshan & Mugisha";
+});
+
+const page = document.querySelector("body");
+const newP = document.getElementById("p4");
+page.addEventListener("keydown", (event) => {
+  newP.append(String.fromCharCode(event.keyCode));
 });
