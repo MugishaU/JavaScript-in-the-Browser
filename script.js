@@ -11,3 +11,8 @@ h1.addEventListener("click", (event) => {
 h1.addEventListener("mouseleave", (event) => {
   h1.style.backgroundColor = "white";
 });
+
+const h2 = document.querySelector("header h2");
+h2.addEventListener("mouseover", function event(){
+  h2.textContent = "Hello, Greetings"
+});
