@@ -13,6 +13,10 @@ h1.addEventListener("mouseleave", (event) => {
 });
 
 const h2 = document.querySelector("header h2");
-h2.addEventListener("mouseover", function event(){
-  h2.textContent = "Hello, Greetings"
+h2.addEventListener("mouseover", function event() {
+  h2.textContent = "Hello, Greetings";
+});
+
+h2.addEventListener("mouseout", function event() {
+  h2.textContent = "Eshan & Mugisha";
 });
